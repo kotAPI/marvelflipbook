@@ -1,0 +1,83 @@
+@font-face{
+	font-family: 'benton';
+	src: url(../font/benton.otf);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	/*background:url('http://37.media.tumblr.com/tumblr_mbha9qWF401qcixnko4_500.gif') no-repeat center center fixed;*/
+	background:url('../yo.gif') no-repeat center center fixed;
+	background-size: cover;
+	overflow:hidden;
+}
+
+#marvel-text-container{
+	position: absolute;
+	top:20%;	
+	width: 100%;
+	height: 350px;
+	
+	
+}
+
+#marvel-text{
+	
+	position:relative;
+	text-align: center;
+	
+	font-family: 'benton';
+	font-size: 220px;
+	-webkit animation: flipbook 14s infinite linear;	
+	animation: flipbook 14s infinite linear;	
+	
+}
+#marvel-text-1{
+	
+	position:relative;
+	text-align: center;
+	
+	font-family: 'benton';
+	font-size: 45px !important;
+	color:white;
+	
+	
+}
+
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes flipbook {
+    0%   {font-size: 540px;}
+    25%  {font-size: 360px;}
+    75%  {font-size: 240px}
+    100% {font-size: 120px;}
+}
+
+/* Standard syntax */
+@keyframes flipbook {
+    0%   {font-size: 640px;
+    	color: rgba(255,255,255,0);
+    	border:3px solid rgba(255,255,255,0.0);
+
+    	}
+    25%  {font-size: 560px;
+    	color: rgba(255,255,255,0.05);
+    	border:5px solid rgba(255,255,255,0.05);
+    	}
+    50%  {font-size: 360px;
+    	color: rgba(255,255,255,0.50);
+    	border:3px solid rgba(255,255,255,0.50);
+    	}
+
+
+    75%  {font-size: 240px;
+    	color: rgba(255,255,255,0.75);
+    	border:3px solid white;
+    	border:2px solid rgba(255,255,255,0.10);
+    	}
+    100% {font-size: 120px;
+    	color: rgba(255,255,255,1.0);
+    	border:1px solid rgba(255,255,255,0.1);
+    	}
+}
